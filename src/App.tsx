@@ -11,7 +11,10 @@ import cookingIcon from "../src/assets/images/icons/cooking-icon.svg";
 import skillsIcon from "../src/assets/images/icons/skills-icon.svg";
 import workHistoryIcon from "../src/assets/images/icons/work-history-icon.svg";
 import educationIcon from "../src/assets/images/icons/education-icon.svg";
-import { myInfo } from "./myInfo";
+import { myInfoEn } from "./myInfoEn";
+import { myInfoPl } from "./myInfoPl";
+
+const LANGUAGE = "pl";
 
 const hobbyIcons: { [key: string]: string } = {
   bike: bikeIcon,
@@ -20,11 +23,13 @@ const hobbyIcons: { [key: string]: string } = {
 };
 
 function App() {
+  const myInfo = LANGUAGE === "pl" ? myInfoPl : myInfoEn;
   const {
     name,
     description,
     personalInfo,
     languagesInfo,
+    technologiesStrongInfo,
     technologiesInfo,
     hobbyInfo,
     skillsInfo,
@@ -50,7 +55,7 @@ function App() {
         <div className="personal-info">
           <div className="part-header">
             <img src={personalIcon} alt="personal icon" />
-            <p>personal info</p>
+            <p>{LANGUAGE === "pl" ? "informacje" : "personal info"}</p>
           </div>
 
           {personalInfo.map((info) => {
@@ -66,7 +71,7 @@ function App() {
         <div className="languages">
           <div className="part-header">
             <img src={languagesIcon} alt="languages icon" />
-            <p>languages</p>
+            <p>{LANGUAGE === "pl" ? "języki obce" : "languages"}</p>
           </div>
 
           {languagesInfo.map((info) => {
@@ -85,6 +90,9 @@ function App() {
           </div>
 
           <div className="technologies-items">
+            {technologiesStrongInfo.map((technology) => {
+              return <div className="strong-item">{technology}</div>;
+            })}
             {technologiesInfo.map((technology) => {
               return <div className="item">{technology}</div>;
             })}
@@ -147,7 +155,7 @@ function App() {
                 <div className="row">
                   <div className="line"></div>
                   <p className="employer">
-                    {work.employer}, {work.city}
+                    {`${work.employer}${!!work.city ? ", " + work.city : ""}`}
                   </p>
                 </div>
                 {work.details?.map((detail) => (
