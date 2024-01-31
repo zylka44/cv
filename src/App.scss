@@ -1,0 +1,277 @@
+.print-area {
+  display: grid;
+  grid:
+    "portrait   header" 15%
+    "additional main  " 85%
+    / 30% 70%;
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  padding: 10mm;
+  background-color: white;
+}
+
+.portrait {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: portrait;
+
+  .image-container {
+    width: 45mm;
+    height: 45mm;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  grid-area: header;
+
+  .name {
+    color: #343434;
+    font-size: 30pt;
+    font-weight: 700;
+  }
+
+  .description {
+    margin: 5mm 0;
+    text-align: justify;
+  }
+}
+
+.part-header {
+  display: flex;
+  align-items: center;
+  margin: 7mm 0 3mm 0;
+  color: #343434;
+  font-size: 16pt;
+  font-weight: 700;
+
+  img {
+    width: 10mm;
+    height: 10mm;
+  }
+
+  p {
+    margin: 0 4mm;
+  }
+}
+
+.additional-info {
+  grid-area: additional;
+  margin: 5mm 0;
+  line-height: 1.5;
+
+  .item {
+    font-size: 10pt;
+  }
+
+  .personal-info-name {
+    font-weight: 700;
+  }
+
+  .personal-info-details {
+    margin-bottom: 3mm;
+  }
+
+  .technologies-items {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      margin: 1mm;
+      padding: 1mm 2mm;
+      border: 0.5mm solid #cccccc;
+      border-radius: 2mm;
+      font-weight: 700;
+    }
+  }
+
+  .hobby {
+    .item {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 7mm;
+        height: 7mm;
+        margin: 0 2mm 0 1mm;
+      }
+    }
+  }
+}
+
+.main-info {
+  grid-area: main;
+  margin: 5mm 0 5mm 35mm;
+
+  .item {
+    font-size: 12pt;
+  }
+
+  .skills {
+    .item {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .dot {
+        position: absolute;
+        left: 3.6mm;
+        width: 3mm;
+        height: 3mm;
+        border-radius: 50%;
+        background-color: #343434;
+      }
+
+      .line {
+        width: 5mm;
+        height: 8mm;
+        margin-left: 5mm;
+        border-left: 0.5mm solid #dedede;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .work-history {
+    .item {
+      .row {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .period {
+          position: absolute;
+          left: -23mm;
+          top: 2mm;
+          width: 25mm;
+          font-size: 9pt;
+        }
+
+        .dot {
+          position: absolute;
+          left: 3.6mm;
+          width: 3mm;
+          height: 3mm;
+          border-radius: 50%;
+          background-color: #343434;
+        }
+
+        .line {
+          width: 5mm;
+          height: 8mm;
+          margin-left: 5mm;
+          border-left: 0.5mm solid #dedede;
+        }
+
+        p {
+          margin: 0;
+        }
+
+        .position {
+          font-weight: 700;
+        }
+
+        .employer {
+          font-style: italic;
+        }
+
+        .work-details {
+          display: flex;
+          flex-direction: column;
+          font-size: 10pt;
+        }
+      }
+    }
+  }
+
+  .education {
+    .item {
+      .row {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .period {
+          position: absolute;
+          left: -23mm;
+          top: 2mm;
+          width: 25mm;
+          font-size: 9pt;
+        }
+
+        .dot {
+          position: absolute;
+          left: 3.6mm;
+          width: 3mm;
+          height: 3mm;
+          border-radius: 50%;
+          background-color: #343434;
+        }
+
+        .line {
+          width: 5mm;
+          height: 8mm;
+          margin-left: 5mm;
+          border-left: 0.5mm solid #dedede;
+        }
+
+        p {
+          margin: 0;
+        }
+
+        .field {
+          font-weight: 700;
+        }
+
+        .school {
+          font-style: italic;
+        }
+
+        .work-details {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  p {
+    width: 210;
+    margin: 0 10mm;
+    color: #343434;
+    font-size: 9pt;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}
+
+@media print {
+  .print-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
