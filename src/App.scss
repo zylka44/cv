@@ -3,7 +3,7 @@
   grid:
     "portrait   header" 15%
     "additional main  " 85%
-    / 30% 70%;
+    / 25% 75%;
   position: relative;
   width: 210mm;
   height: 297mm;
@@ -33,7 +33,6 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: flex-start;
   grid-area: header;
 
@@ -70,7 +69,7 @@
 
 .additional-info {
   grid-area: additional;
-  margin: 5mm 0;
+  margin: 0;
   line-height: 1.5;
 
   .item {
@@ -123,10 +122,10 @@
 
 .main-info {
   grid-area: main;
-  margin: 5mm 0 5mm 35mm;
+  margin: 0 0 5mm 30mm;
 
   .item {
-    font-size: 12pt;
+    font-size: 10pt;
   }
 
   .skills {
@@ -145,8 +144,8 @@
       }
 
       .line {
-        width: 5mm;
-        height: 8mm;
+        min-width: 5mm;
+        height: 10mm;
         margin-left: 5mm;
         border-left: 0.5mm solid #dedede;
       }
@@ -278,10 +277,30 @@
   }
 }
 
+.languageToggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8pt;
+  padding: 8pt;
+  min-width: 40pt;
+  color: #343434;
+  text-align: center;
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #dedede;
+  border-radius: 3pt;
+  cursor: pointer;
+}
+
 @media print {
   .print-area {
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  .languageToggler {
+    visibility: hidden;
   }
 }

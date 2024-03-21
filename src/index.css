@@ -6,6 +6,8 @@ body {
   display: flex;
   justify-content: center;
   font-weight: 300;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
 }
 
 @page {
