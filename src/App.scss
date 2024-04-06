@@ -1,3 +1,7 @@
+$antracyt: #343434;
+$green: #4e5c58;
+$purple: #5b216c;
+
 .print-area {
   display: grid;
   grid:
@@ -37,8 +41,9 @@
   grid-area: header;
 
   .name {
-    color: #343434;
-    font-size: 30pt;
+    font-family: "Caveat", cursive;
+    color: $purple;
+    font-size: 36pt;
     font-weight: 700;
   }
 
@@ -53,7 +58,7 @@
   display: flex;
   align-items: center;
   margin: 7mm 0 3mm 0;
-  color: #343434;
+  color: $green;
   font-size: 16pt;
   font-weight: 700;
 
@@ -90,10 +95,13 @@
 
     .strong-item {
       margin: 1mm;
-      padding: 1mm 2mm;
-      border: 0.5mm solid #cccccc;
+      padding: 1mm 1.5mm;
+      border: 0.5mm solid $purple;
       border-radius: 2mm;
-      font-weight: 700;
+      font-weight: 400;
+      font-size: 12pt;
+      line-height: 14pt;
+      color: $purple;
     }
 
     .item {
@@ -110,22 +118,6 @@
     .item {
       display: flex;
       align-items: center;
-
-      .smaller-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #343434;
-        width: 7mm;
-        height: 7mm;
-        border-radius: 50%;
-        margin: 0 2mm 0 1mm;
-
-        img {
-          width: 5mm;
-          height: 5mm;
-        }
-      }
     }
   }
 }
@@ -144,20 +136,8 @@
       align-items: center;
       position: relative;
 
-      .dot {
-        position: absolute;
-        left: 3.6mm;
-        width: 3mm;
-        height: 3mm;
-        border-radius: 50%;
-        background-color: #343434;
-      }
-
       .line {
-        min-width: 5mm;
         height: 10mm;
-        margin-left: 5mm;
-        border-left: 0.5mm solid #dedede;
       }
 
       p {
@@ -173,28 +153,8 @@
         align-items: center;
         position: relative;
 
-        .period {
-          position: absolute;
-          left: -23mm;
-          top: 2mm;
-          width: 25mm;
-          font-size: 9pt;
-        }
-
-        .dot {
-          position: absolute;
-          left: 3.6mm;
-          width: 3mm;
-          height: 3mm;
-          border-radius: 50%;
-          background-color: #343434;
-        }
-
         .line {
-          width: 5mm;
           height: 8mm;
-          margin-left: 5mm;
-          border-left: 0.5mm solid #dedede;
         }
 
         p {
@@ -225,28 +185,8 @@
         align-items: center;
         position: relative;
 
-        .period {
-          position: absolute;
-          left: -23mm;
-          top: 2mm;
-          width: 25mm;
-          font-size: 9pt;
-        }
-
-        .dot {
-          position: absolute;
-          left: 3.6mm;
-          width: 3mm;
-          height: 3mm;
-          border-radius: 50%;
-          background-color: #343434;
-        }
-
         .line {
-          width: 5mm;
           height: 8mm;
-          margin-left: 5mm;
-          border-left: 0.5mm solid #dedede;
         }
 
         p {
@@ -279,7 +219,7 @@
   p {
     width: 210;
     margin: 0 10mm;
-    color: #343434;
+    color: $green;
     font-size: 9pt;
     font-weight: 200;
     line-height: 1.5;
@@ -294,7 +234,7 @@
   margin: 8pt;
   padding: 8pt;
   min-width: 40pt;
-  color: #343434;
+  color: $green;
   text-align: center;
   font-size: 9pt;
   font-weight: 900;
@@ -307,7 +247,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #343434;
+  background-color: $green;
   width: 10mm;
   height: 10mm;
   border-radius: 50%;
@@ -316,6 +256,46 @@
     width: 7mm;
     height: 7mm;
   }
+}
+
+.smaller-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $green;
+  width: 7mm;
+  height: 7mm;
+  border-radius: 50%;
+  margin: 0 2mm 0 1mm;
+
+  img {
+    width: 5mm;
+    height: 5mm;
+  }
+}
+
+.dot {
+  position: absolute;
+  left: 4.2mm;
+  width: 2mm;
+  height: 2mm;
+  border-radius: 50%;
+  background-color: $green;
+}
+
+.line {
+  width: 5mm;
+  height: 5mm;
+  margin-left: 5mm;
+  border-left: 0.5mm solid #dedede;
+}
+
+.period {
+  position: absolute;
+  left: -23mm;
+  top: 2mm;
+  width: 25mm;
+  font-size: 9pt;
 }
 
 @media print {

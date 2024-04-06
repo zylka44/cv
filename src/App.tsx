@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.scss";
-import portrait from "../src/assets/images/portrait.jpg";
+import portrait from "../src/assets/images/me-bg.jpeg";
 import personalIcon from "../src/assets/icons/user-svgrepo-com.svg";
 import languagesIcon from "../src/assets/icons/global-svgrepo-com.svg";
 import technologiesIcon from "../src/assets/icons/ruler-cross-pen-svgrepo-com.svg";
@@ -55,41 +55,6 @@ function App() {
         </div>
 
         <div className="additional-info">
-          <div className="personal-info">
-            <div className="part-header">
-              <span className="icon">
-                <img src={personalIcon} alt="personal icon" />
-              </span>
-              <p>{language === "pl" ? "informacje" : "personal info"}</p>
-            </div>
-
-            {personalInfo.map((info) => {
-              return (
-                <div className="item">
-                  <div className="personal-info-name">{info.name}</div>
-                  <div className="personal-info-details">{info.details}</div>
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="languages">
-            <div className="part-header">
-              <span className="icon">
-                <img src={languagesIcon} alt="languages icon" />
-              </span>
-              <p>{language === "pl" ? "języki obce" : "languages"}</p>
-            </div>
-
-            {languagesInfo.map((info) => {
-              return (
-                <div className="item">
-                  <b>{info.language}:</b>&nbsp;&nbsp;&nbsp;{info.level}
-                </div>
-              );
-            })}
-          </div>
-
           <div className="technologies">
             <div className="part-header">
               <span className="icon">
@@ -112,6 +77,23 @@ function App() {
             </div>
           </div>
 
+          <div className="languages">
+            <div className="part-header">
+              <span className="icon">
+                <img src={languagesIcon} alt="languages icon" />
+              </span>
+              <p>{language === "pl" ? "języki obce" : "languages"}</p>
+            </div>
+
+            {languagesInfo.map((info) => {
+              return (
+                <div className="item">
+                  <b>{info.language}:</b>&nbsp;&nbsp;&nbsp;{info.level}
+                </div>
+              );
+            })}
+          </div>
+
           <div className="hobby">
             <div className="part-header">
               <span className="icon">
@@ -128,6 +110,24 @@ function App() {
                   </span>
 
                   <p>{hobby.name}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="personal-info">
+            <div className="part-header">
+              <span className="icon">
+                <img src={personalIcon} alt="personal icon" />
+              </span>
+              <p>{language === "pl" ? "informacje" : "personal info"}</p>
+            </div>
+
+            {personalInfo.map((info) => {
+              return (
+                <div className="item">
+                  <div className="personal-info-name">{info.name}</div>
+                  <div className="personal-info-details">{info.details}</div>
                 </div>
               );
             })}
