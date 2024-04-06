@@ -1,6 +1,6 @@
 $antracyt: #343434;
 $green: #4e5c58;
-$purple: #5b216c;
+$purple: #8d26ad;
 
 .print-area {
   display: grid;
@@ -51,7 +51,7 @@ $purple: #5b216c;
   .description {
     margin: 5mm 0;
     text-align: justify;
-    line-height: 20pt;
+    line-height: 18pt;
     font-size: 10pt;
     font-weight: 400;
   }
@@ -202,11 +202,6 @@ $purple: #5b216c;
         .school {
           font-style: italic;
         }
-
-        .work-details {
-          display: flex;
-          flex-direction: column;
-        }
       }
     }
   }
@@ -300,6 +295,15 @@ $purple: #5b216c;
   border: 1px solid #dedede;
   padding: 1mm;
   border-radius: 1mm;
+}
+
+.mark {
+  font-weight: 600;
+  color: $green;
+}
+
+.colorPurple {
+  color: $purple;
 }
 
 @media print {

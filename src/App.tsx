@@ -40,6 +40,19 @@ function App() {
   const toggleLanguage = (): void =>
     setLanguage(language === "pl" ? "en" : "pl");
 
+  const formatText = (text: string): JSX.Element[] => {
+    const textSplitByStar = text.split("*");
+    const textElements = textSplitByStar.map((part) => {
+      const isBold = part.includes("|");
+      if (isBold) {
+        return <span className="mark">{part.replace("|", "")}</span>;
+      } else {
+        return <span>{part}</span>;
+      }
+    });
+    return textElements;
+  };
+
   return (
     <>
       <div className={"print-area"}>
@@ -123,9 +136,9 @@ function App() {
               <p>{language === "pl" ? "informacje" : "personal info"}</p>
             </div>
 
-            {personalInfo.map((info) => {
+            {personalInfo.map((info, id) => {
               return (
-                <div className="item">
+                <div className={`item ${id === 2 && "colorPurple"}`}>
                   <div className="personal-info-name">{info.name}</div>
                   <div className="personal-info-details">{info.details}</div>
                 </div>
@@ -148,7 +161,7 @@ function App() {
                 <div className="item">
                   <div className="dot"></div>
                   <div className="line"></div>
-                  <div>{skill}</div>
+                  <div>{formatText(skill)}</div>
                 </div>
               );
             })}

@@ -6,7 +6,7 @@ export const myInfoEn = {
   name: "Żaneta Czapiewska",
   portraitUrl: "../assets/images/portrait.jpg",
   description:
-    "I am well organised, persistent, conscientious and patient person. I like to cooperate with others. I also like to develop myself and learn new skills, especially in the programming field.",
+    "I am well organised, persistent, conscientious and patient person. I like to cooperate with others. I also like to develop myself and learn new skills, especially in the programming field. I am passionate about solving problems and creating eye-pleasing and functional solutions.",
   personalInfo: [
     { name: "email", details: "zancza@gmail.com" },
     { name: "phone", details: "692 202 262" },
@@ -34,6 +34,7 @@ export const myInfoEn = {
     "Jira",
     "Confluence",
     "Storybook",
+    "Scrum",
   ],
   hobbyInfo: [
     { name: "bike traveling", iconName: "bike" },
@@ -42,14 +43,14 @@ export const myInfoEn = {
   ],
 
   skillsInfo: [
-    "good knowledge of JavaScript and TypeScript",
-    "working knowledge of HTML5, CSS3, Saas",
-    "development experience in Angular",
-    "experience in React and Redux",
-    "experience in RxJS and NgRx",
-    "practical knowledge of Git",
-    "experience working in Agile work environments",
-    "team spirit and communication skills",
+    "I have been programming as part of commercial cooperation for over four years.",
+    "I have strong knowledge of *TypeScript|*, *HTML|* and *CSS|*.",
+    "I have been working with *React|* for over two years.",
+    "I have experience working with *Redux|* (commercial Angular projects and private React projects).",
+    "I recently learned the basics of *Next.js|*.",
+    "from the beginning I have been using *Node.js|* in my work, building simple services used in the applications I create.",
+    "I have recently been learning to create applications in *React Native|*.",
+    "I use *GIT|* fluently.",
   ],
   workHistoryInfo: [
     {

@@ -34,6 +34,7 @@ export const myInfoPl = {
     "Jira",
     "Confluence",
     "Storybook",
+    "Scrum",
   ],
   hobbyInfo: [
     { name: "podróże rowerowe", iconName: "bike" },
@@ -42,13 +43,14 @@ export const myInfoPl = {
   ],
 
   skillsInfo: [
-    "bardzo dobrze znam JavaScript, TypeScript, HTML i CSS",
-    "tworzę aplikacje w React na bazie komponentów klasowych jak i funkcyjnych",
-    "w tworzonych aplikacjach zarządzam store korzystając z Redux lub MobX",
-    "mam doświadczenie w tworzeniu serwisów i budowaniu API wykorzystując Node.js i Express",
-    "sprawnie przekładam projekty UI na funkcjonalny interface, korzystajac z Saas lub LESS",
-    "swobodnie korzystam z Git",
-    "dobrze współpracuję w zespole i jednocześnie wykazuję się samodzielnością, mam doświadczenie w pracy w podejściu Scrum",
+    "od ponad czterech lat programuję w ramach współpracy komercyjnej",
+    "od ponad dwóch lat pracuję z wykorzystaniem *Reacta|*",
+    "mam doświadczenie w pracy z *Reduxem|* (komercyjne projekty Angularowe i prywatne projekty w Reactcie)",
+    "niedawno poznałam podstawy *Next.js|*",
+    "w swoim prywatnym projekcie korzystam z *Redux Toolkit|*",
+    "od początku w swojej pracy korzystam z *Node.js|*, budując proste serwisy wykorzystwane w tworzonych przeze mnie aplikacjach",
+    "od niedawna uczę się tworzenia aplikacji w *React Native|*",
+    "brałam udział w projekcie, w którym wpółtworzyłam aplikację jednocześnie w wersji desktopowej i mobilnej",
   ],
   workHistoryInfo: [
     {
@@ -59,9 +61,9 @@ export const myInfoPl = {
       end: "obecnie",
       details: [
         "rozwijanie aplikacji do zarządzania informacjami o produktach (PIM)",
-        "tworzenie komponentów i wykorzystywanie ich do tworzenia UI w React",
-        "tworzenie API i rozwój serwisów do zarządzania danymi w Express ",
-        "przygotowywanie technicznej dokumnetacji, planowanie zadań",
+        "tworzenie komponentów i wykorzystywanie ich do tworzenia (React)",
+        "tworzenie API i rozwój serwisów do zarządzania danymi (Node.js, Express)",
+        "przygotowywanie technicznej dokumnetacji (Confluence), planowanie zadań (Jira)",
       ],
     },
     {
@@ -69,10 +71,10 @@ export const myInfoPl = {
       employer: "Gdańskie Wydawnictwo Oświatowe",
       city: "Gdańsk",
       start: "wrzesień 2019",
-      end: "paźdz. 2021",
+      end: "październik 2021",
       details: [
-        "tworzenie gier edukacyjnych w TypeScript",
-        "budowanie aplikacji internetowych dla uczniów i nauczycieli w Angular",
+        "tworzenie gier edukacyjnych (TypeScript)",
+        "budowanie aplikacji internetowych dla uczniów i nauczycieli (Angular, Redux, Node.js)",
       ],
     },
     {
@@ -87,7 +89,7 @@ export const myInfoPl = {
       field: "matematyka z informatyką",
       grade: "magister",
       school: "Uniwersytet Gdański",
-      start: "paźdz. 2006",
+      start: "październik 2006",
       end: "lipiec 2011",
     },
   ],
