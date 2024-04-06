@@ -166,13 +166,12 @@ function App() {
               return (
                 <div className="item">
                   <div className="row">
-                    <div className="period">
-                      {work.start} -<br />
-                      {work.end}
-                    </div>
                     <div className="dot"></div>
                     <div className="line"></div>
                     <p className="position">{work.position}</p>
+                    <span className="period">
+                      {work.start} - {work.end}
+                    </span>
                   </div>
                   <div className="row">
                     <div className="line"></div>
@@ -202,15 +201,14 @@ function App() {
             {educationInfo?.map((education) => (
               <div className="item">
                 <div className="row">
-                  <div className="period">
-                    {education.start} -<br />
-                    {education.end}
-                  </div>
                   <div className="dot"></div>
                   <div className="line"></div>
                   <p className="field">
                     {education.field}, {education.grade}
                   </p>
+                  <span className="period">
+                    {education.start} - {education.end}
+                  </span>
                 </div>
                 <div className="row">
                   <div className="line"></div>

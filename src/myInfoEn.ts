@@ -61,7 +61,7 @@ export const myInfoEn = {
       details: [
         "developing PIM functionality in React and Node.js",
         "developing internal modules",
-        "preparing technical documentation for end users and developers",
+        "preparing technical documentation for users and developers, task planning",
       ],
     },
     {

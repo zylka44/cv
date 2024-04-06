@@ -61,7 +61,7 @@ export const myInfoPl = {
         "rozwijanie aplikacji do zarządzania informacjami o produktach (PIM)",
         "tworzenie komponentów i wykorzystywanie ich do tworzenia UI w React",
         "tworzenie API i rozwój serwisów do zarządzania danymi w Express ",
-        "przygotowywanie technicznej dokumnetacji",
+        "przygotowywanie technicznej dokumnetacji, planowanie zadań",
       ],
     },
     {

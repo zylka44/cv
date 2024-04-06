@@ -7,7 +7,7 @@ $purple: #5b216c;
   grid:
     "portrait   header" 15%
     "additional main  " 85%
-    / 25% 75%;
+    / 33% 67%;
   position: relative;
   width: 210mm;
   height: 297mm;
@@ -17,7 +17,7 @@ $purple: #5b216c;
 
 .portrait {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   grid-area: portrait;
 
@@ -26,6 +26,7 @@ $purple: #5b216c;
     height: 45mm;
     border-radius: 50%;
     overflow: hidden;
+    border: 1px solid #cccccc;
 
     img {
       width: 100%;
@@ -51,6 +52,8 @@ $purple: #5b216c;
     margin: 5mm 0;
     text-align: justify;
     line-height: 20pt;
+    font-size: 10pt;
+    font-weight: 400;
   }
 }
 
@@ -124,7 +127,6 @@ $purple: #5b216c;
 
 .main-info {
   grid-area: main;
-  margin: 0 0 5mm 30mm;
 
   .item {
     font-size: 10pt;
@@ -220,7 +222,7 @@ $purple: #5b216c;
     width: 210;
     margin: 0 10mm;
     color: $green;
-    font-size: 9pt;
+    font-size: 8pt;
     font-weight: 200;
     line-height: 1.5;
     text-align: justify;
@@ -248,13 +250,13 @@ $purple: #5b216c;
   justify-content: center;
   align-items: center;
   background-color: $green;
-  width: 10mm;
-  height: 10mm;
+  width: 9mm;
+  height: 9mm;
   border-radius: 50%;
 
   img {
-    width: 7mm;
-    height: 7mm;
+    width: 5mm;
+    height: 5mm;
   }
 }
 
@@ -291,11 +293,13 @@ $purple: #5b216c;
 }
 
 .period {
-  position: absolute;
-  left: -23mm;
-  top: 2mm;
-  width: 25mm;
-  font-size: 9pt;
+  margin-left: 3mm;
+  font-size: 7pt;
+  font-style: italic;
+  color: $green;
+  border: 1px solid #dedede;
+  padding: 1mm;
+  border-radius: 1mm;
 }
 
 @media print {
