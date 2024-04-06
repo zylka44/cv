@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import "./App.scss";
 import portrait from "../src/assets/images/portrait.jpg";
-import personalIcon from "../src/assets/images/icons/personal-icon.svg";
-import languagesIcon from "../src/assets/images/icons/languages-icon.svg";
-import technologiesIcon from "../src/assets/images/icons/technologies-icon.svg";
-import hobbyIcon from "../src/assets/images/icons/hobby-icon.svg";
-import bikeIcon from "../src/assets/images/icons/bike-icon.svg";
-import mathIcon from "../src/assets/images/icons/math-icon.svg";
-import cookingIcon from "../src/assets/images/icons/cooking-icon.svg";
-import skillsIcon from "../src/assets/images/icons/skills-icon.svg";
-import workHistoryIcon from "../src/assets/images/icons/work-history-icon.svg";
-import educationIcon from "../src/assets/images/icons/education-icon.svg";
+import personalIcon from "../src/assets/icons/user-svgrepo-com.svg";
+import languagesIcon from "../src/assets/icons/global-svgrepo-com.svg";
+import technologiesIcon from "../src/assets/icons/ruler-cross-pen-svgrepo-com.svg";
+import hobbyIcon from "../src/assets/icons/heart-svgrepo-com.svg";
+import bikeIcon from "../src/assets/icons/bicycling-svgrepo-com.svg";
+import campingIcon from "../src/assets/icons/bonfire-svgrepo-com.svg";
+import cookingIcon from "../src/assets/icons/chef-hat-svgrepo-com.svg";
+import skillsIcon from "../src/assets/icons/laptop-svgrepo-com.svg";
+import workHistoryIcon from "../src/assets/icons/case-round-svgrepo-com.svg";
+import educationIcon from "../src/assets/icons/square-academic-cap-svgrepo-com.svg";
 import { myInfoEn } from "./myInfoEn";
 import { myInfoPl } from "./myInfoPl";
 
 const hobbyIcons: { [key: string]: string } = {
   bike: bikeIcon,
-  math: mathIcon,
+  camping: campingIcon,
   cooking: cookingIcon,
 };
 
@@ -57,7 +57,9 @@ function App() {
         <div className="additional-info">
           <div className="personal-info">
             <div className="part-header">
-              <img src={personalIcon} alt="personal icon" />
+              <span className="icon">
+                <img src={personalIcon} alt="personal icon" />
+              </span>
               <p>{language === "pl" ? "informacje" : "personal info"}</p>
             </div>
 
@@ -73,7 +75,9 @@ function App() {
 
           <div className="languages">
             <div className="part-header">
-              <img src={languagesIcon} alt="languages icon" />
+              <span className="icon">
+                <img src={languagesIcon} alt="languages icon" />
+              </span>
               <p>{language === "pl" ? "języki obce" : "languages"}</p>
             </div>
 
@@ -88,7 +92,9 @@ function App() {
 
           <div className="technologies">
             <div className="part-header">
-              <img src={technologiesIcon} alt="technologies icon" />
+              <span className="icon">
+                <img src={technologiesIcon} alt="technologies icon" />
+              </span>
               <p>{language === "pl" ? "narzędzia" : "technologies"}</p>
             </div>
 
@@ -108,14 +114,19 @@ function App() {
 
           <div className="hobby">
             <div className="part-header">
-              <img src={hobbyIcon} alt="hobby icon" />
+              <span className="icon">
+                <img src={hobbyIcon} alt="hobby icon" />
+              </span>
               <p>hobby</p>
             </div>
 
             {hobbyInfo.map((hobby) => {
               return (
                 <div className="item">
-                  <img src={hobbyIcons[hobby.iconName]} alt="hobby icon" />
+                  <span className="smaller-icon">
+                    <img src={hobbyIcons[hobby.iconName]} alt="hobby icon" />
+                  </span>
+
                   <p>{hobby.name}</p>
                 </div>
               );
@@ -126,7 +137,9 @@ function App() {
         <div className="main-info">
           <div className="skills">
             <div className="part-header">
-              <img src={skillsIcon} alt="skills icon" />
+              <span className="icon">
+                <img src={skillsIcon} alt="skills icon" />
+              </span>
               <p>{language === "pl" ? "umiejętności" : "skills"}</p>
             </div>
 
@@ -143,7 +156,9 @@ function App() {
 
           <div className="work-history">
             <div className="part-header">
-              <img src={workHistoryIcon} alt="work history icon" />
+              <span className="icon">
+                <img src={workHistoryIcon} alt="work history icon" />
+              </span>
               <p>{language === "pl" ? "doświadczenie" : "work history"}</p>
             </div>
 
@@ -178,7 +193,9 @@ function App() {
 
           <div className="education">
             <div className="part-header">
-              <img src={educationIcon} alt="education icon" />
+              <span className="icon">
+                <img src={educationIcon} alt="education icon" />
+              </span>
               <p>{language === "pl" ? "edukacja" : "education"}</p>
             </div>
 

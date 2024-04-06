@@ -37,7 +37,7 @@ export const myInfoPl = {
   ],
   hobbyInfo: [
     { name: "podróże rowerowe", iconName: "bike" },
-    { name: "matematyka", iconName: "math" },
+    { name: "wędrówki i obozowanie", iconName: "camping" },
     { name: "gotowanie", iconName: "cooking" },
   ],
 

@@ -37,7 +37,7 @@ export const myInfoEn = {
   ],
   hobbyInfo: [
     { name: "bike traveling", iconName: "bike" },
-    { name: "mathematics", iconName: "math" },
+    { name: "hiking and camping", iconName: "camping" },
     { name: "cooking", iconName: "cooking" },
   ],
 

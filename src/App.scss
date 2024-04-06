@@ -111,10 +111,20 @@
       display: flex;
       align-items: center;
 
-      img {
+      .smaller-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #343434;
         width: 7mm;
         height: 7mm;
+        border-radius: 50%;
         margin: 0 2mm 0 1mm;
+
+        img {
+          width: 5mm;
+          height: 5mm;
+        }
       }
     }
   }
@@ -291,6 +301,21 @@
   background-color: #dedede;
   border-radius: 3pt;
   cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #343434;
+  width: 10mm;
+  height: 10mm;
+  border-radius: 50%;
+
+  img {
+    width: 7mm;
+    height: 7mm;
+  }
 }
 
 @media print {
